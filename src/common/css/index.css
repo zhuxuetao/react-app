@@ -1,0 +1,44 @@
+.fontStyle {
+    color: rgb(39, 34, 34);
+}
+.deleteBtn {
+    padding-left: 30px;
+    color:red;
+}
+
+.show {    
+    animation: show-item 2s ease-in forwards;
+    /* opacity: 1; */
+}
+.hide {
+    animation: hide-item 2s ease-in forwards;
+    /* opacity: 0; */
+}
+@keyframes show-item {
+    0% {
+        opacity: 0;
+        color: red;
+    }
+    50% {
+        opacity: .5;
+        color: blueviolet
+    }
+    100% {
+        opacity: 1;
+        color: black;
+    }
+}
+@keyframes hide-item {
+    0% {
+        opacity: 1;
+        color:black;
+    }
+    50% {
+        opacity: .5;
+        color: blueviolet
+    }
+    100% {
+        opacity: 0;
+        color: red;
+    }
+}
